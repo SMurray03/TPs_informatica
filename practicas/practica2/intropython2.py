@@ -105,7 +105,7 @@ def temperatura_media(temp_max,temp_min):
 
 c_de_dias = int(input("cantidad de días: "))
 
-for dia in range(cantidad_de_dias):
+for dia in range(c_de_dias):
     t_maxima = float(input("Temperatura maxima: "))
     t_minima = float(input("Temperatura minima: "))
     print("La temperatura media del día es de " + str(temperatura_media(t_maxima,t_minima)) + " grados")
