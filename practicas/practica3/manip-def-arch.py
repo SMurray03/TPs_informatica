@@ -29,13 +29,13 @@ def start_with(archivo,letra):
 def read_and_print_first_lines(archivo, cantidad_de_lineas):
     linea = open("Lorem.txt","r").readlines()[:cantidad_de_lineas]
     print(*linea)       
-read_and_print_first_lines("Lorem.txt",2)
+
 
 # 3
 def read_and_print_last_lines(archivo, cantidad_de_lineas):
     linea = open("Lorem.txt","r").readlines()[-cantidad_de_lineas:]
     print(*linea)       
-read_and_print_last_lines("Lorem.txt",2)
+
 
 #4
 def conteo_palabras_de_archivo(archivo):
@@ -43,21 +43,20 @@ def conteo_palabras_de_archivo(archivo):
     leer_archivo = arch.read()
     por_palabra = leer_archivo.split()
     print('El archivo tiene',len(por_palabra), "palabras.")
-conteo_palabras_de_archivo("Lorem.txt")
 
 #5
 def replace_letter(entrada,salida,letter):
     with open(entrada,"r") as file, open(salida,"w") as archivo_nuevo:
         for line in file:
             archivo_nuevo.write(line.replace(letter, letter + "\n"))
-replace_letter("Lorem.txt","ArchEj5.txt","l")
+
 
 #6
 def eliminar_saltos_de_linea(entrada,salida):
     with open(entrada,"r") as e, open(salida,"w") as s:
         for line in e:
             s.write(line.strip("\n"))
-eliminar_saltos_de_linea("LaPelotaNoSeMancha.txt","ArchEj6.txt")
+
 
 #7
 def palabra_mas_larga(archivo):
@@ -69,7 +68,7 @@ def palabra_mas_larga(archivo):
         if len(palabra) > len(palabra_mas_larga_del_archivo):
             palabra_mas_larga_del_archivo = palabra
     print("La palabra más larga del archivo es",palabra_mas_larga_del_archivo,"y tiene",str(len(palabra_mas_larga_del_archivo)),"caracteres")   
-palabra_mas_larga("Lorem.txt")   
+
 
 #8
 def GuardarContenidoDeDosArchivosEnOtro(arch1, arch2, salida):
@@ -80,7 +79,6 @@ def GuardarContenidoDeDosArchivosEnOtro(arch1, arch2, salida):
     existing_file = open(salida, "a")
     for line in file1, file2:
         existing_file.write(line)
-GuardarContenidoDeDosArchivosEnOtro("Lorem.txt","Discurso.txt","Dos_en_unoNro8.txt")
 
 #9
 def frecuencia_de_palabras(archivo):
@@ -91,7 +89,7 @@ def frecuencia_de_palabras(archivo):
     for palabra in lista_de_palabras:
         frec[palabra] = lista_de_palabras.count(palabra) / len(lista_de_palabras)
     print(frec)
-frecuencia_de_palabras("LaPelotaNoSeMancha.txt")
+
 
 # 10
 def unir_txt(carpeta1, nombre):
@@ -102,4 +100,10 @@ def unir_txt(carpeta1, nombre):
         for file in textos:
             with open(file,"r") as texto:
                 s.write(texto.read() + "\n")
-unir_txt('EjNro10Archivos','ArchivoDeSalidaDelEj10.txt')
+
+
+
+
+
+
+
