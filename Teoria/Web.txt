@@ -1,0 +1,21 @@
+.Cliente y Servidor
+--> Cliente se maneja con CSS, HTML, JAVASCRIPT. Tambien pide o consulta recursos.
+--> En cuanto al Servidor se suele utilizar Python, Ruby, Java, y lo que hace es exponer o brindar los recursos.
+--> Requests es la conexion que nos permite conectar lo que escribimos con HTTP
+--> Las url son los path, me dice donde esta ese recurso en particular, en que maquina. Tienen un formato particular/preciso.
+--> HTTP, se utiliza verb get(con este hacemos un pedido)
+--> Las comounicaciones en web tienen un codigo asociado
+--> Json --> formato de texto mas comun en web
+--> 404 Quiere decir que lo que pediste no se esta encontrando
+--> 200 Accepted
+--> Header >>> Content type y la fecha >>> Header nos dice caracteristicas del desarrollo de la conexion.
+--> El dominio de una url esta despues de dobles //
+--> Get hace un pedido/atrae recursos, el Servidor recibe get, dispara la ejecucion de codigo,
+    que selecciona esos recursos y los muestra.
+--> Post >>> Agregar algo
+--> Delete >>> Eliminar algo
+--> Put o Patch >>> modificar algo (generalmente se usa put para todo)
+
+
+
+
